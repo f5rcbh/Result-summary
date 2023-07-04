@@ -157,3 +157,39 @@ button{
 button:active{
     background: linear-gradient(180deg ,var(--lightBlue) , var(--lightRoyal));
 }
+
+/* mobile Version */
+
+@media screen and  (max-width:550px) {
+    .main{
+        display: flex;
+        justify-content: center;
+     
+        flex-direction: column;
+        margin: auto;
+    }
+    .first-comp {
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 30px;
+    }
+    .circle{
+        width: 6rem;
+        height: 6rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p {
+        font-size: .9rem;
+    }
+    .second-comp {
+        font-size: 13px;
+    }
+    .layouts{
+        grid-template-rows: repeat(4, 40px);
+    }
+    button{
+        padding: .5rem;
+    }
+}
