@@ -1,3 +1,4 @@
+
 *,*::after,
 *::before{
     margin: 0;
@@ -48,7 +49,10 @@
     padding: 1rem;
     text-align: center;
     border-radius: 5%;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
 }
+
 .circle{
 border-radius: 50%;
 width: 8rem;
@@ -65,11 +69,13 @@ background: linear-gradient(180deg,var(--violetBlue),var(
 h1{
     color: var(--white);
     font-size: 3rem;
+    font-weight: 800;
 }
 h2{
     color: var(--white);
 }
 p{
+    font-weight: 200;
     padding: .5rem;
     color: var(--lightLavender);
     font-size: 17px;
@@ -82,32 +88,72 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
     padding: 1rem;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
+.second-comp p {
+    color: var(--darkBlue);
+    font-weight: 700;
+    font-size: 18px;
+}
 .layouts{
     display: grid;
-    grid-template-rows: repeat(4, 50px);
+    grid-template-rows: repeat(4 , 50px);
     row-gap: 1rem;
 }
 
 .red , .yellow, .green,.blue{
     color: var(--lightRed) ;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 15rem;    
-    height: 3rem;
+    /* width: 15rem;    
+    height: 3rem; */
     border-radius: 10px;
+    background-color: hsla(0, 100%, 67%, 0.100);
+    padding: 0 10px;
 }
-
+.yellow div:nth-child(1) , .blue div:nth-child(1) , .green div:nth-child(1) , .red div:nth-child(1) {
+    display: flex;
+    
+}
+.yellow span:nth-child(2) , .blue span:nth-child(2) , .green span:nth-child(2) , .red span:nth-child(2){
+    padding-left: .5rem;
+}
 .yellow{
 color: var(--orangeYellow);
+background-color: hsla(39, 100%, 56%, 0.100);
 }
+
 .green{
     color: var(--greenTeal);
+    background-color: hsla(166, 100%, 37%, 0.100);
 }
 .blue{
     color: var(--cobaltBlue);
+    background-color: hsla(234, 85%, 45%, 0.100);
+}
+.numbers{
+    color: hsl(226, 8%, 68%);
+}
+.numbers span{
+    color: var(--darkBlue);
+}
+
+button{
+    background: var(--darkBlue);
+    color: var(--white);
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:active{
+    background: linear-gradient(180deg ,var(--lightBlue) , var(--lightRoyal));
 }
